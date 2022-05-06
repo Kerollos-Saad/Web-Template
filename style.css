@@ -1,0 +1,624 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    }
+
+html {
+        scroll-behavior: smooth;
+    }
+
+body {
+    font-family: "Open Sans", sans-serif;
+    /* min-height: 8000px; */
+    }
+
+/***************************************************** Small *****************************************************/
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+    }
+/***************************************************** Medium *****************************************************/
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+    }
+/***************************************************** Large *****************************************************/
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+    }
+
+/************************************** Start Wrapper  *********************************/
+.wrapper{
+    background:
+    linear-gradient(
+        rgba(0, 0, 0, 0.3),
+        rgba(0, 0, 0, 0.3)
+    ),
+    url("images/school.jpeg");
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 51rem;
+}
+
+.wrapper img{
+    width: 5% ;
+    margin-left: 2rem ;
+    margin-top: 2% ;
+}
+/************************************** End Wrapper  *********************************/
+
+/************************************** Start Nav  *********************************/
+
+nav{
+    width: 100%;
+    height: 80px;
+    background-color: #0005;
+    line-height: 80px;
+    position: sticky; 
+	top: 0;
+}
+
+nav ul{
+    float: right;
+    margin: 0;
+    margin-right: 0.5rem;
+}
+
+nav ul li{
+    list-style-type: none;
+    display: inline-block;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    padding: 20px;
+}
+
+nav ul li:hover{
+    background-color: #FF000090;
+    color: #000;
+    font-weight: bold;
+    font-size: 1.2rem;
+    transition-duration: 0.5s;
+    transition-delay: 0.05s;
+}
+/************************************** End Nav  *********************************/
+
+/************************************** Start Menu  *******************************/
+
+.menu{
+    position: relative;
+}
+
+/******************************************** submenu-1 *******************************/
+
+.menu .submenu-1{
+    position: absolute;
+    /******* change ******/
+    top: 80px;
+    left: -77px;
+    width: 265px;
+    /******* change ******/
+    background-color: #0009;
+    padding: 10px;
+    -wbkit-box-shadow: 0 1px 1px rgba(0,0,0, 0.5);
+    -mox-box-shadow: 0 1px 1px rgba(0,0,0, 0.5);
+    box-shadow: 0 1px 1px rgba(0,0,0, 0.5);
+    display: none;
+}
+
+.menu .submenu-1 li{
+    padding: 5px;
+    width: 245px;
+}
+
+.menu .submenu-1 li a{
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.menu .submenu-1 li a:hover{
+    color: #fff;
+}
+
+.menu .submenu-1::before{
+    content: "";
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid #FFF;
+    height: 0px;
+    width: 0px;
+    position: absolute;
+    left: calc(46%);
+    top: -10px;
+}
+
+.menu:hover .submenu-1{
+    display: block;
+}
+
+/******************************************** submenu-2 *******************************/
+
+.menu .submenu-2{
+    position: absolute;
+    /******* change ******/
+    top: 80px;
+    left: -60px;
+    width: 260px;
+    /******* change ******/
+    background-color: #0009;
+    padding: 10px;
+    -wbkit-box-shadow: 0 1px 1px rgba(0,0,0, 0.5);
+    -mox-box-shadow: 0 1px 1px rgba(0,0,0, 0.5);
+    box-shadow: 0 1px 1px rgba(0,0,0, 0.5);
+    display: none;
+}
+
+.menu .submenu-2 li{
+    padding: 5px;
+    width: 240px;
+}
+
+.menu .submenu-2 li a{
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.menu .submenu-2 li a:hover{
+    color: #fff;
+}
+
+.menu .submenu-2::before{
+    content: "";
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid #FFF;
+    height: 0px;
+    width: 0px;
+    position: absolute;
+    left: calc(46%);
+    top: -10px;
+}
+
+.menu:hover .submenu-2{
+    display: block;
+}
+
+/******************************************** submenu-3 *******************************/
+
+.menu .submenu-3{
+    position: absolute;
+    /******* change ******/
+    top: 80px;
+    left: -37px;
+    width: 180px;
+    /******* change ******/
+    background-color: #0009;
+    padding: 10px;
+    -wbkit-box-shadow: 0 1px 1px rgba(0,0,0, 0.5);
+    -mox-box-shadow: 0 1px 1px rgba(0,0,0, 0.5);
+    box-shadow: 0 1px 1px rgba(0,0,0, 0.5);
+    display: none;
+}
+
+.menu .submenu-3 li{
+    padding: 5px;
+    width: 160px;
+}
+
+.menu .submenu-3 li a{
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.menu .submenu-3 li a:hover{
+    color: #fff;
+}
+
+.menu .submenu-3::before{
+    content: "";
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid #FFF;
+    height: 0px;
+    width: 0px;
+    position: absolute;
+    left: calc(41%);
+    top: -10px;
+}
+
+.menu:hover .submenu-3{
+    display: block;
+}
+
+/******************************************** submenu-4 *******************************/
+
+.menu .submenu-4{
+    position: absolute;
+    /******* change ******/
+    top: 80px;
+    left: -60px;
+    width: 200px;
+    /******* change ******/
+    background-color: #0009;
+    padding: 10px;
+    -wbkit-box-shadow: 0 1px 1px rgba(0,0,0, 0.5);
+    -mox-box-shadow: 0 1px 1px rgba(0,0,0, 0.5);
+    box-shadow: 0 1px 1px rgba(0,0,0, 0.5);
+    display: none;
+}
+
+.menu .submenu-4 li{
+    padding: 5px;
+    width: 180px;
+}
+
+.menu .submenu-4 li a{
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.menu .submenu-4 li a:hover{
+    color: #fff;
+}
+
+.menu .submenu-4::before{
+    content: "";
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid #FFF;
+    height: 0px;
+    width: 0px;
+    position: absolute;
+    left: calc(60%);
+    top: -10px;
+}
+
+.menu:hover .submenu-4{
+    display: block;
+}
+
+/************************************** End Menu  *********************************/
+
+/************************************** Start Section  *********************************/
+.section{
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    margin-top: 4%;
+}
+
+.section h1{
+    color: #fff;
+    line-height: 50px;
+}
+
+.section p{
+    color: #000000;
+}
+/************************************** End Section  *********************************/
+
+.btn-1{
+    background-color: #950101;
+    padding: 0.7rem 1rem;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+/************************************** Start Features  *********************************/
+.features{
+    margin-top: 30%;
+    margin-bottom: 2%;
+}
+
+.features button{
+    padding: 0.7rem 2rem;
+    margin-right: 2rem;
+    font-size: 1.2rem;
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.features button:hover{
+    background-color: #ff0000cc;
+    border-radius: 15px;
+    color:white;
+    opacity: unset;
+}
+/************************************** Start Features  *********************************/
+.department {
+    padding: 100px;
+}
+
+showcase h1{
+    margin-top: 3%;
+    margin-bottom: 3%;
+    text-align: center;
+    margin-top: 6%;
+    margin-bottom: 6%;
+}
+
+/************************************** Start courses  *********************************/
+.courses{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 40px;
+}
+
+.courses img{
+    width: 220px;
+    height: 150px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    margin: auto;
+
+    filter: grayscale(100%);
+    transition: 0.1s;
+    cursor: pointer;
+}
+
+.courses img:hover{
+    filter: grayscale(0%);
+}
+/************************************** End Courses  *********************************/
+
+/************************************** Start Courses-b  *********************************/
+.courses-b{
+    display: flex;
+    justify-content:space-between;
+    text-align: center;
+    flex-direction: row;
+    padding-top: 0%;
+    padding-bottom: 6%;
+    padding-right: 6%;
+    padding-left: 6%;
+}
+
+
+.courses-b .apply{
+    width: 140px;
+    border-radius: 10px;
+    border: 2px solid #000;
+    margin: auto;
+
+    background-color: #950101;
+    padding: 0.7rem 1rem;
+    color: #fff;
+    cursor: pointer;
+}
+/************************************** End Courses-b  *********************************/
+
+h3{
+    text-align:calc(20);
+}
+
+/***************************************************** Start Components *****************************************************/
+.main-heading {
+    text-align: center;
+    }
+.main-heading h2 {
+    font-weight: normal;
+    font-size: 40px;
+    position: relative;
+    margin-bottom: 70px;
+    text-transform: uppercase;
+    }
+.main-heading h2::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 2px;
+    background-color: #333;
+    bottom: -30px;
+    width: 120px;
+    }
+.main-heading h2::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    border: 2px solid #333;
+    bottom: -38px;
+    background-color: white;
+    }
+.main-heading p {
+    width: 550px;
+    margin: 0 auto 100px;
+    max-width: 100%;
+    line-height: 2;
+    color: #777;
+    }
+/***************************************************** End Components *****************************************************/
+
+
+/***************************************************** Start Services *****************************************************/
+
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    }
+
+.services {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    }
+@media (min-width: 768px) {
+    .services .services-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+        grid-column-gap: 40px;
+        grid-row-gap: 60px;
+    }
+    }
+.services .srv-box {
+    display: flex;
+    }
+.services .srv-box i {
+    margin-right: 50px;
+    }
+@media (max-width: 767px) {
+    .services .srv-box {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+    .services .srv-box i {
+        margin: 0 0 30px;
+    }
+    }
+.services .srv-box h3 {
+    margin-bottom: 30px;
+    color: #950101;
+    }
+.services .srv-box p {
+    line-height: 2;
+    color: #777;
+    }
+/***************************************************** End Services *****************************************************/
+
+/****************************************** Start Components ******************************************/
+
+.special-heading {
+        color: #C0C1C2;
+        font-size: 100px;
+        text-align: center;
+        font-weight: 800;
+        letter-spacing: -3px;
+        margin: 0;
+    }
+.special-heading + p {
+        margin: -30px 0 0;
+        font-size: 20px;
+        text-align: center;
+        color: #797979;
+    }
+@media (max-width: 767px) {
+    .special-heading {
+        font-size: 60px;
+    }
+.special-heading + p {
+            margin-top: -20px;
+        }
+    }
+
+/****************************************** End Components ******************************************/
+
+/****************************************** Start Services--2--  ******************************************/
+
+.services--2-- {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+.services--2-- .services-content {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        grid-gap: 30px;
+        margin-top: 100px;
+    }
+.services--2-- .services-content .srv {
+        display: flex;
+        margin-bottom: 40px;
+    }
+@media (max-width: 767px) {
+    .services--2-- .services-content .srv {
+        flex-direction: column;
+        text-align: center;
+        }
+    }
+.services--2-- .services-content .srv i {
+        flex-basis: 60px;
+    }
+.services--2-- .services-content .srv .text {
+        flex: 1;
+    }
+.services--2-- .services-content .srv .text h3 {
+        color: #950101;
+        margin: 0 0 20px;
+    }
+.services--2-- .services-content .srv .text p {
+        color: #444;
+        font-weight: 300;
+        line-height: 1.6;
+    }
+.services--2-- .services-content .image {
+        text-align: center;
+        position: relative;
+    }
+.services--2-- .services-content .image::before {
+        content: "";
+        background-color: #2c4755;
+        width: 100px;
+        height: calc(100% + 100px);
+        top: -50px;
+        position: absolute;
+        right: 0;
+        z-index: -1;
+    }
+.services--2-- .services-content .image img {
+        width: 260px;
+    }
+@media (max-width: 1199px) {
+    .image-column {
+            display: none;
+        }
+    }
+/****************************************** end Services--2--  ******************************************/
+
+/******************************************* Start Portfolio *******************************************/
+.portfolio {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: #f6f6f6;
+    }
+.portfolio .portfolio-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 53px;
+    margin-top: 80px;
+    }
+.portfolio .portfolio-content .card {
+    background-color: white;
+    }
+.portfolio .portfolio-content .card img {
+    max-width: 100%;
+    height: 46%;
+    }
+.portfolio .portfolio-content .card .info {
+    padding: 20px;
+    }
+.portfolio .portfolio-content .card .info h3 {
+    margin: 0;
+    }
+.portfolio .portfolio-content .card .info p {
+    color: #777;
+    line-height: 1.6;
+    margin-bottom: 0;
+    }
+
+/******************************************* End Portfolio *******************************************/
+

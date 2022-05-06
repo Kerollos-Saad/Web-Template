@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charsey="utf-8">
+        <meta name="describtio" content="Html">
+        <title>Form Project</title>
+        <script>
+            
+        </script>
+        <style>
+            p{
+                font-size: large;
+                width: 170px;
+                margin: 20px auto;
+                font-weight: bold;
+                color: #00FFF5;
+            }
+
+            .head{
+                text-align: center;
+            }
+            
+            body{background: #222831;font-family: Arial, Tahoma}
+            
+            fieldset{
+                background: #768091;
+                border: 1px solid #CCC;
+                padding: 20px;
+                width: 500px;
+                margin: 20px auto;
+            }
+            
+            legend{
+                font-weight: bold;
+                background: #00ADB5;
+                border: 1px solid #CCC;
+                padding: 10px;
+            }
+
+            input{margin-bottom: 10px ;}
+            label{
+                font-weight:bolder;
+                margin-bottom: 10px ;
+                display:block;
+            }
+            
+            input[type="text"],
+            input[type="password"]
+            {
+                padding: 7px;
+                width: 300px;
+                display: block;
+            }
+            
+            hr{border: 1px solid #EEE}
+            
+            textarea{
+                padding: 10px;
+                display: block;
+                margin-bottom: 10px ;
+            }
+
+            input
+            {
+                font-weight: bold;
+            }
+            
+        </style>
+    </head>
+    <body>
+
+        <div class="head"> 
+            <img src="images/logo.gif" class="img" alt="logo"> 
+        </div>
+
+        <p>Apply Courses</p>
+
+        <form name="register">
+            <fieldset>
+                <legend>Personal Information</legend>
+                    <label>User name</label>
+                        <input type="text" name="username">
+                    <label>Password</label>      
+                        <input type="password" name="password">
+                    <label>E-mail</label>
+                        <input type="text" name="email">
+                    <label>ID</label>
+                        <input type="text" name="id">
+
+                    <label>Gender</label>
+                        <select name="Gender">
+                            <option value="Male" >Male</option>
+                            <option value="Female" >Female</option>
+                        </select>
+            </fieldset>
+            
+            <fieldset>
+                <legend>Course Information </legend>
+
+                <label>Your Course</label>
+                    <input type="radio" name="course"> Computer Science <br>
+                    <input type="radio" name="course"> Information System <br>
+                    <input type="radio" name="course"> Artificial intelligence<br>
+                    <input type="radio" name="course"> Cyber security <br>
+                    <input type="radio" name="course"> Medical Science <br>
+                <hr>
+                
+                <label>Your GPA</label>
+                    <input type="radio" name="gpa"> 4 <br>
+                    <input type="radio" name="gpa"> 3.2 <br>
+                    <input type="radio" name="gpa"> 2.6 <br>
+                    <input type="radio" name="gpa"> 2.0 <br>
+            </fieldset>
+
+            <fieldset>
+                <legend>About You</legend>
+                <textarea rows="5"></textarea>
+                <input type="submit" value="APPLY" >
+            </fieldset>
+        </form>
+    </body>
+</html>
